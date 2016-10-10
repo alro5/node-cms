@@ -1,0 +1,10 @@
+article {
+	background: white;
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	
+} 

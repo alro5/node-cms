@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<head>
+		<title>Frontend Developer | Alexander Rothschild</title>
+		<link href="https://fonts.googleapis.com/css?family=Marck+Script|Roboto+Condensed:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/main.css">
+	</head>
+	<body ng-app="app">
+
+	<div 
+        ng-class="{ 'scrolled' : vm.scrolled }"
+        class="nav">
+        <div class="nav-inner">
+            <ul>
+                <li ui-sref="home"
+                    class="logo">
+                    <img src="http://s.imgur.com/images/imgur-logo.svg?1" alt="Imgur logo" />
+                </li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div
+            class="main"
+            ui-view>    
+        </div>
+    </div>
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="dist/js/app.js"></script>
+</html>

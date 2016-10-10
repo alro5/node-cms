@@ -1,0 +1,12 @@
+img {
+	display: block;
+
+	&.rounded {
+		border-radius: 100%;
+	}
+
+}
+
+[images-loaded] {
+	min-height: 110px;
+}

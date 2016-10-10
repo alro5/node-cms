@@ -1,0 +1,43 @@
+.button--close {
+	$size: 50px;
+
+	width: $size;
+	height: $size;
+	background: black;
+	cursor: pointer;
+
+	&:hover {
+		span {
+			&:first-child {
+				transform: rotate(35deg);
+			}
+
+			&:last-child {
+				transform: rotate(-35deg);
+			}
+		}
+	}
+
+	span {
+		display: block;
+		height: 2px;
+		width: 30px;
+		background: white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+		transition: all 250ms ease;
+
+		&:first-child {
+			transform: rotate(45deg);
+		}
+
+		&:last-child {
+			transform: rotate(-45deg);
+		}
+
+	}
+}
